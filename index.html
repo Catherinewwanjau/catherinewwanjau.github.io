@@ -1,117 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine Wanjau | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data Science Portfolio</title>
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#1d2433;--mute:#5d6678;--line:#e4e0d8;--acc:#2f6f5e;--accbg:#e4f1ec;--warn:#fdf3e1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--card:#1c222c;--ink:#e8ebf0;--mute:#9aa4b5;--line:#2c3441;--acc:#6fc2a8;--accbg:#1d332d;--warn:#33291a}}
+:root[data-theme="dark"]{--bg:#14181f;--card:#1c222c;--ink:#e8ebf0;--mute:#9aa4b5;--line:#2c3441;--acc:#6fc2a8;--accbg:#1d332d;--warn:#33291a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}
+.w{max-width:860px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.tag,nav,.k,.lab{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:64px 0 36px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--mute);max-width:640px;margin:0}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+nav a{padding:7px 14px;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;font-size:14px;background:var(--card)}
+nav a:hover{border-color:var(--acc);color:var(--acc)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+.lab{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-weight:600}
+h2{font-size:clamp(24px,4.5vw,32px);margin:6px 0 10px;letter-spacing:-.01em}
+h3{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:26px 0 8px}
+p{margin:0 0 12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.s{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.s b{display:block;font:700 24px/1.2 system-ui,sans-serif;color:var(--acc)}
+.s span{font:13px/1.4 system-ui,sans-serif;color:var(--mute)}
+ul{margin:0 0 12px;padding-left:20px}li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.tag{font-size:12.5px;padding:3px 10px;border-radius:99px;background:var(--accbg);color:var(--acc)}
+.note{background:var(--warn);border-left:3px solid var(--acc);padding:12px 16px;border-radius:0 8px 8px 0;font-size:15px;margin-top:14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:14px system-ui,sans-serif;margin:8px 0}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--mute);font-weight:600}
+footer{padding:32px 0 48px;color:var(--mute);font:14px system-ui,sans-serif}
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-            <h1>Catherine Wanjau</h1>
-            <p>Software Developer | Web Enthusiast | Open Source Contributor</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Catherine, a passionate software developer with experience in building web applications. I enjoy tackling challenging problems, contributing to open-source projects, and learning new technologies.
-            </p>
-        </section>
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <ul class="projects-list">
-                <li>
-                    <strong>Project One</strong><br>
-                    <span>A web app that does amazing things. <a href="#">GitHub</a> | <a href="#">Demo</a></span>
-                </li>
-                <li>
-                    <strong>Project Two</strong><br>
-                    <span>An open-source library for developers. <a href="#">GitHub</a></span>
-                </li>
-                <!-- Add more projects here -->
-            </ul>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <p>
-                Feel free to reach out via <a href="mailto:your.email@example.com">email</a>, or connect with me on
-                <a href="https://github.com/Catherinewwanjau" target="_blank">GitHub</a>.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            &copy; 2025 Catherine Wanjau. All rights reserved.
-        </div>
-    </footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine Wanjau | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-            <h1>Catherine Wanjau</h1>
-            <p>Software Developer | Web Enthusiast | Open Source Contributor</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Catherine, a passionate software developer with experience in building web applications. I enjoy tackling challenging problems, contributing to open-source projects, and learning new technologies.
-            </p>
-        </section>
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <ul class="projects-list">
-                <li>
-                    <strong>Project One</strong><br>
-                    <span>A web app that does amazing things. <a href="#">GitHub</a> | <a href="#">Demo</a></span>
-                </li>
-                <li>
-                    <strong>Project Two</strong><br>
-                    <span>An open-source library for developers. <a href="#">GitHub</a></span>
-                </li>
-                <!-- Add more projects here -->
-            </ul>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <p>
-                Feel free to reach out via <a href="mailto:your.email@example.com">email</a>, or connect with me on
-                <a href="https://github.com/Catherinewwanjau" target="_blank">GitHub</a>.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            &copy; 2025 Catherine Wanjau. All rights reserved.
-        </div>
-    </footer>
+<header><div class="w">
+<h1>Turning messy data into decisions.</h1>
+<p class="lead">Data analyst and aspiring data scientist working across NLP, forecasting, and procurement analytics. Each project below covers the problem, my approach, what I found, and where I would take it next.</p>
+<nav><a href="#jobs">Job Market NLP</a><a href="#demand">Demand Forecasting</a><a href="#spend">Spend Analysis</a></nav>
+</div></header>
+
+<main class="w">
+
+<section id="jobs">
+<div class="lab">Project 1 · NLP & Machine Learning</div>
+<h2>Job Postings: Skill Extraction & Salary Modelling</h2>
+<p>What do employers ask for in data roles, and can a posting's text help estimate pay? I cleaned raw Adzuna job-posting data for Data Scientist, Data Analyst and BI Analyst roles, built a rule-based skill extractor, and trained a salary model evaluated with leakage-aware cross-validation.</p>
+<div class="stats">
+<div class="s"><b>30</b><span>skills in the custom taxonomy</span></div>
+<div class="s"><b>$19.2K</b><span>cross-validated MAE vs $25.1K baseline</span></div>
+<div class="s"><b>0.27</b><span>R² vs −0.11 for the baseline</span></div>
+<div class="s"><b>0</b><span>content groups split across CV folds</span></div>
+</div>
+<h3>What I did</h3>
+<ul>
+<li><b>Data quality audit.</b> Found that every description was exactly 500 characters and cut off mid-text, meaning the source API returns snippets, not full postings. I documented this up front and carried it through every conclusion.</li>
+<li><b>Careful deduplication.</b> Postings with identical text but different IDs and locations were tagged with a content group ID rather than deleted, then used to prevent train/validation leakage.</li>
+<li><b>Skill extraction with regex.</b> Built patterns for tools, cloud platforms, ML libraries and analytics concepts. Reviewed every match in context and caught a false positive where the language "R" matched inside a requisition number, then fixed the pattern.</li>
+<li><b>Salary model.</b> TF-IDF text features, location and search-term encodings in a Ridge regression pipeline, tuned with nested grouped cross-validation. Compared against a mean-predictor baseline and excluded salary columns to avoid target leakage.</li>
+<li><b>Deployment checks.</b> Saved the pipeline with joblib and tested it against missing columns, unseen categories, null values, wrong types and empty input.</li>
+</ul>
+<h3>Findings</h3>
+<ul>
+<li>Dashboards (23.3% of postings) and data visualisation (13.3%) were the most-mentioned concepts in the available text.</li>
+<li>Skills were detected in 14 of 30 postings (46.7%). Detected skill count had a weak positive link with estimated salary (Spearman 0.29).</li>
+<li>The tuned model cut error by about $5.9K (23%) against the baseline.</li>
+</ul>
+<div class="note"><b>Honest limits.</b> Thirty postings with truncated text and mostly source-predicted salaries makes this a proof of concept, not a market estimate. Zero detections mean "not in the snippet", not "not required". The next step is collecting full descriptions and a much larger sample.</div>
+<div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">regex NLP</span><span class="tag">TF-IDF</span><span class="tag">scikit-learn</span><span class="tag">Ridge regression</span><span class="tag">Nested CV</span><span class="tag">joblib</span></div>
+</section>
+
+<section id="demand">
+<div class="lab">Project 2 · Time Series & Forecasting</div>
+<h2>Retail Demand Forecasting</h2>
+<p>Overstocking ties up cash and understocking loses sales. Using two years of retail inventory data, I explored demand patterns and built forecasting models at both the whole-business and single product-store level.</p>
+<div class="stats">
+<div class="s"><b>73,100</b><span>daily records analysed</span></div>
+<div class="s"><b>5 × 20</b><span>stores × products</span></div>
+<div class="s"><b>3</b><span>model families compared</span></div>
+<div class="s"><b>30 days</b><span>forecast horizon</span></div>
+</div>
+<h3>What I did</h3>
+<ul>
+<li><b>Exploratory analysis.</b> Aggregated daily sales and examined trend, monthly and day-of-week seasonality, and category contribution.</li>
+<li><b>Feature engineering.</b> Extracted date features and encoded store, product, category, region, weather and seasonality fields.</li>
+<li><b>Random Forest regressor.</b> Predicted units sold from the full feature set (MAE 7.23, R² 0.99 on a random 80/20 split).</li>
+<li><b>SARIMA(1,1,1)(1,1,1,7).</b> Fitted a weekly-seasonal model for one product at one store and projected 30 days ahead.</li>
+<li><b>XGBoost with time-aware tuning.</b> Built lag and calendar features and searched 24 parameter combinations using <code>TimeSeriesSplit</code>, which keeps training data strictly before validation data.</li>
+</ul>
+<h3>Recommendations drawn from the work</h3>
+<ul>
+<li>Pilot forecasting in one high-volume store, then scale.</li>
+<li>Retrain monthly or quarterly as demand shifts.</li>
+<li>Surface forecasts in a live Power BI dashboard for buyers and store managers.</li>
+</ul>
+<div class="note"><b>What I would tighten next.</b> The 0.99 R² comes from a random split on features that include same-day fields such as the existing demand forecast and units ordered, so it is an optimistic upper bound rather than a true forward-looking score. The stronger version holds out the final weeks chronologically, drops same-day inputs, scores SARIMA and XGBoost on that same holdout, and benchmarks against a seasonal-naive forecast.</div>
+<div class="tags"><span class="tag">Python</span><span class="tag">statsmodels</span><span class="tag">SARIMA</span><span class="tag">XGBoost</span><span class="tag">Random Forest</span><span class="tag">TimeSeriesSplit</span><span class="tag">matplotlib</span><span class="tag">seaborn</span></div>
+</section>
+
+<section id="spend">
+<div class="lab">Project 3 · Procurement Analytics</div>
+<h2>Procurement Spend Analysis</h2>
+<p>Where is the money going, who is it going to, and where can it be saved? I analysed a year of purchasing transactions and turned the results into supplier segments, a risk view, a savings estimate and an executive dashboard.</p>
+<div class="stats">
+<div class="s"><b>$1.24M</b><span>total spend analysed</span></div>
+<div class="s"><b>500</b><span>purchase orders, 2024</span></div>
+<div class="s"><b>26.5%</b><span>of spend with top supplier</span></div>
+<div class="s"><b>~$50K</b><span>estimated savings opportunity (4%)</span></div>
+</div>
+<h3>What I did</h3>
+<ul>
+<li><b>Validation and KPIs.</b> Checked types, nulls and duplicates, then built an executive KPI summary.</li>
+<li><b>Pareto (ABC) analysis</b> of suppliers and categories. Electronics alone is 56.2% of spend and, with Software, makes up over 83%.</li>
+<li><b>Supplier risk matrix</b> plotting spend against order activity to separate strategic, operational and tactical suppliers.</li>
+<li><b>Price variance by item</b> across all five suppliers to find consolidation targets.</li>
+<li><b>Interactive Plotly dashboard</b> covering category, monthly trend, supplier and ABC views.</li>
+</ul>
+<h3>Findings</h3>
+<div class="tw"><table>
+<tr><th>Insight</th><th>Evidence</th><th>Action</th></tr>
+<tr><td>Supplier concentration</td><td>TechMart 26.5%, top three suppliers 67.5%</td><td>Contingency plan and multi-sourcing</td></tr>
+<tr><td>Price inconsistency</td><td>Annual software licence ranges $5,936–$8,610 across suppliers</td><td>Benchmark and consolidate to 2–3 suppliers</td></tr>
+<tr><td>Year-end buying</td><td>Peaks in Sept–Oct (Sept $125K), lows in Jul–Aug (about $76K)</td><td>Shift major purchases to low-spend months</td></tr>
+<tr><td>Price drives cost</td><td>Unit price vs total cost r = 0.54; quantity vs total r = 0.05</td><td>Focus negotiation on price, not volume</td></tr>
+</table></div>
+<div class="note"><b>Honest limits.</b> The savings figure applies assumed rates (5% / 3% / 1% by ABC class), so it is a sizing estimate, not realised savings. With only five suppliers, a stronger version would add delivery and quality data to score supplier performance, and test the budget-flush pattern against more than one year of history.</div>
+<div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">ABC / Pareto</span><span class="tag">Plotly</span><span class="tag">Risk matrix</span><span class="tag">Strategic sourcing</span><span class="tag">KPI dashboards</span></div>
+</section>
+
+<section>
+<div class="lab">Across all three</div>
+<h2>How I work</h2>
+<ul>
+<li><b>I audit the data before trusting it.</b> Truncated text, negative sales, repeated postings and regex false positives were all found by checking, not assuming.</li>
+<li><b>I validate against a baseline.</b> Models are compared to a naive benchmark, using grouped or time-aware splits where leakage is a risk.</li>
+<li><b>I translate analysis into action.</b> Each project ends with specific recommendations a business owner can act on.</li>
+<li><b>I state limitations plainly.</b> Sample size, assumptions and data gaps are part of the result.</li>
+</ul>
+</section>
+</main>
+<footer><div class="w">Built from three Jupyter notebooks. Add your contact links here.</div></footer>
 </body>
 </html>
